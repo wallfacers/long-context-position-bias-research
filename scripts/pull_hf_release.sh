@@ -42,7 +42,13 @@ echo "pull verified: $(du -sh "$rel_local" | cut -f1)"
 
 if [[ "${1:-}" == "--upload" ]]; then
   echo "== upload to HF =="
-  .venv/bin/python scripts/upload_hf_release.py
+  if [[ -x .venv/bin/python ]]; then
+    PY=.venv/bin/python
+  else
+    PY=python3
+    "$PY" -c "import huggingface_hub" 2>/dev/null || python3 -m pip install --user -q huggingface_hub
+  fi
+  "$PY" scripts/upload_hf_release.py
 else
   echo "Pull done. To upload: export HF_TOKEN=... && bash scripts/pull_hf_release.sh --upload"
 fi
