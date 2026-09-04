@@ -1,0 +1,5 @@
+# Lightweight release-validation environment; no CUDA or model runtime required.
+huggingface-hub==1.23.0
+matplotlib==3.10.5
+pyparsing==3.2.5
+pytest==9.1.1

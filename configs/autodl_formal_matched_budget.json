@@ -1,0 +1,59 @@
+{
+  "name": "qwen25_7b_formal_matched_position_ablation",
+  "as_of": "2026-08-27",
+  "currency": "CNY",
+  "contingency_ratio": 0.2,
+  "round_up_to": 50,
+  "pricing": {
+    "rtx_5090_32gb": {
+      "hourly_rate": 2.78,
+      "source": "user-observed AutoDL rental rate used by the completed pilot"
+    }
+  },
+  "one_time_costs": [
+    {
+      "name": "idle_retry_storage_and_transfer_reserve",
+      "amount": 25.0
+    }
+  ],
+  "workloads": [
+    {
+      "name": "matched_six_variants_three_seeds",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 18,
+      "parallel_instances": 1,
+      "units_per_run": 2000,
+      "seconds_per_unit": 2.8884,
+      "fixed_hours_per_run": 0.1,
+      "notes": "Six matched pairing-by-supervision cells at three data/training seeds. Pilot calibration: four 2,000-step runs occupied 23,107 seconds including orchestration. A resumed canary is part of, not additional to, the 2,000 steps."
+    },
+    {
+      "name": "base_plus_eighteen_full_test_runs",
+      "calibration_group": "eval_request",
+      "gpu": "rtx_5090_32gb",
+      "runs": 19,
+      "parallel_instances": 1,
+      "units_per_run": 4200,
+      "seconds_per_unit": 1.7671,
+      "fixed_hours_per_run": 0.05,
+      "notes": "One cached base result plus all 18 adapters on the existing 84-cell, 50-group pilot test. The base can be skipped when its prior artifact identity remains valid."
+    },
+    {
+      "name": "five_selected_diagnostic_runs",
+      "calibration_group": "eval_request",
+      "gpu": "rtx_5090_32gb",
+      "runs": 5,
+      "parallel_instances": 1,
+      "units_per_run": 9000,
+      "seconds_per_unit": 1.7671,
+      "fixed_hours_per_run": 0.05,
+      "notes": "Base and four preregistered representative adapters on locate-only, oracle-long, and oracle-short diagnostics derived from the 4,200-row test set."
+    }
+  ],
+  "scope_notes": [
+    "This is a task-window estimate, not an AutoDL invoice.",
+    "It excludes optional natural-language OOD teacher API generation and a later 200-groups-per-cell expansion.",
+    "Run the first-seed gate before authorizing seeds two and three; stop through the AutoDL console only after artifacts are verified."
+  ]
+}

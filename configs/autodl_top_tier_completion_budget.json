@@ -1,0 +1,214 @@
+{
+  "name": "top_tier_completion_remaining_from_2026_08_28_1948",
+  "as_of": "2026-08-28T19:48:00+08:00",
+  "currency": "CNY",
+  "contingency_ratio": 0.25,
+  "round_up_to": 50,
+  "pricing": {
+    "rtx_5090_32gb": {
+      "hourly_rate": 2.78,
+      "source": "user-observed AutoDL rate; override with --rate if the live listing differs"
+    }
+  },
+  "one_time_costs": [
+    {
+      "name": "storage_transfer_and_recovery_reserve",
+      "amount": 25.0
+    }
+  ],
+  "workloads": [
+    {
+      "name": "qwen_seed1_rule_eval_remaining_at_1948",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 1,
+      "parallel_instances": 1,
+      "units_per_run": 3032,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Measured remaining paired_evidence_id rows at 19:48 CST; latest per-run throughput, not the earlier optimistic average."
+    },
+    {
+      "name": "qwen_seed1_nolima_gate",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 1050,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Base plus all six checkpoint-100 treatments."
+    },
+    {
+      "name": "qwen_seed1_longbench_transfer",
+      "calibration_group": "medium_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 600,
+      "seconds_per_unit": 0.8,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Three frozen LongBench multi-document QA tasks."
+    },
+    {
+      "name": "qwen_seed1_mmlu_regression",
+      "calibration_group": "short_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 14042,
+      "seconds_per_unit": 0.06,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Batched full MMLU test; estimate is deliberately conservative pending measured throughput."
+    },
+    {
+      "name": "qwen_seed1_ifeval_regression",
+      "calibration_group": "generative_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 541,
+      "seconds_per_unit": 0.8,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Unconstrained outputs up to 1,024 tokens plus CPU official scoring."
+    },
+    {
+      "name": "qwen_seed1_nolima_mechanisms",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 5,
+      "parallel_instances": 1,
+      "units_per_run": 1350,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Base plus four factorial corners; oracle rows deduplicated across source positions."
+    },
+    {
+      "name": "qwen_confirmatory_seed2_seed3_training",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 12,
+      "parallel_instances": 1,
+      "units_per_run": 100,
+      "seconds_per_unit": 2.9,
+      "fixed_hours_per_run": 0.08,
+      "notes": "Two seeds times six treatments, exactly 100 steps with no checkpoint selection."
+    },
+    {
+      "name": "qwen_confirmatory_rule_eval",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 12,
+      "parallel_instances": 1,
+      "units_per_run": 4200,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Six treatments for each of two confirmatory seeds; base is reused."
+    },
+    {
+      "name": "qwen_confirmatory_nolima_eval",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 12,
+      "parallel_instances": 1,
+      "units_per_run": 1050,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "All six treatments for two confirmatory seeds; base is reused."
+    },
+    {
+      "name": "qwen_confirmatory_longbench_eval",
+      "calibration_group": "medium_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 12,
+      "parallel_instances": 1,
+      "units_per_run": 600,
+      "seconds_per_unit": 0.8,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Natural transfer for both confirmatory seeds."
+    },
+    {
+      "name": "mistral_three_seed_training",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 18,
+      "parallel_instances": 1,
+      "units_per_run": 100,
+      "seconds_per_unit": 2.9,
+      "fixed_hours_per_run": 0.08,
+      "notes": "Three seeds times all six treatments on a separately tokenized model family."
+    },
+    {
+      "name": "mistral_rule_eval",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 19,
+      "parallel_instances": 1,
+      "units_per_run": 4200,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "One family base plus 18 trained conditions."
+    },
+    {
+      "name": "mistral_nolima_eval",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 19,
+      "parallel_instances": 1,
+      "units_per_run": 1050,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "One family base plus 18 trained conditions."
+    },
+    {
+      "name": "mistral_longbench_eval",
+      "calibration_group": "medium_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 19,
+      "parallel_instances": 1,
+      "units_per_run": 600,
+      "seconds_per_unit": 0.8,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Natural transfer for base and all trained Mistral conditions."
+    },
+    {
+      "name": "mistral_representative_mmlu_regression",
+      "calibration_group": "short_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 14042,
+      "seconds_per_unit": 0.06,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Base and six first-seed treatments for family-level capability retention."
+    },
+    {
+      "name": "mistral_representative_ifeval_regression",
+      "calibration_group": "generative_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 7,
+      "parallel_instances": 1,
+      "units_per_run": 541,
+      "seconds_per_unit": 0.8,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Official instruction-following regression for the first Mistral seed."
+    },
+    {
+      "name": "mistral_representative_nolima_mechanisms",
+      "calibration_group": "long_eval",
+      "gpu": "rtx_5090_32gb",
+      "runs": 5,
+      "parallel_instances": 1,
+      "units_per_run": 1350,
+      "seconds_per_unit": 2.135,
+      "fixed_hours_per_run": 0.0,
+      "notes": "Family-level mechanism replication on base plus four factorial corners."
+    }
+  ],
+  "scope_notes": [
+    "The budget begins at the measured 19:48 remote state and does not double-count completed work.",
+    "All GPU evaluations are resumable; base outputs are reused within a model family.",
+    "Model download, data preparation, CPU scoring, statistics, plots, LaTeX, and arXiv packaging run concurrently or without additional GPU workloads where possible.",
+    "Use --seconds to replace conservative throughput assumptions after each first completed suite."
+  ]
+}

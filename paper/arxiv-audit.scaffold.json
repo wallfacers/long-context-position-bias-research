@@ -1,0 +1,119 @@
+{
+  "citations": {
+    "cited": [
+      "an2024film",
+      "bai2024longbench",
+      "he2024never",
+      "hendrycks2021mmlu",
+      "hsieh2024found",
+      "hsieh2024ruler",
+      "li2026shuffle",
+      "liao2026shortcut",
+      "liu2024lost",
+      "lv2026lpes",
+      "mehta2026randomized",
+      "modarressi2025nolima",
+      "pei2026focusft",
+      "veseli2025shift",
+      "wang2025pos2distill",
+      "yuan2026longcrafter",
+      "zhang2026positional",
+      "zhou2023ifeval",
+      "zhu2026exact"
+    ],
+    "defined": [
+      "an2024film",
+      "bai2024longbench",
+      "he2024never",
+      "hendrycks2021mmlu",
+      "hsieh2024found",
+      "hsieh2024ruler",
+      "li2026shuffle",
+      "liao2026shortcut",
+      "liu2024lost",
+      "lv2026lpes",
+      "mehta2026randomized",
+      "modarressi2025nolima",
+      "pei2026focusft",
+      "veseli2025shift",
+      "wang2025pos2distill",
+      "yuan2026longcrafter",
+      "zhang2026positional",
+      "zhou2023ifeval",
+      "zhu2026exact"
+    ]
+  },
+  "cross_references": {
+    "labels": [
+      "fig:position",
+      "sec:metrics",
+      "tab:evaluation-config",
+      "tab:factorial-contrasts",
+      "tab:longbench",
+      "tab:main",
+      "tab:mechanism",
+      "tab:nolima",
+      "tab:regression",
+      "tab:training-config"
+    ],
+    "references": [
+      "fig:position",
+      "sec:metrics",
+      "tab:evaluation-config",
+      "tab:mechanism",
+      "tab:training-config"
+    ]
+  },
+  "errors": [],
+  "files": {
+    "README.md": {
+      "bytes": 3610,
+      "sha256": "67c8258eaf100c66355e7f1976067080283b8633e6bafe7bbd0c868c19104528"
+    },
+    "generated/results.tex": {
+      "bytes": 1365,
+      "sha256": "0f5031d4319439d0ed4f87374bef56bd939a308dcfe69ff679902aac51d12b45"
+    },
+    "main.bbl": {
+      "bytes": 7233,
+      "sha256": "798990f977acad6092b21f02875b0e2c4953463165545266cc5dfe610cdadb8f"
+    },
+    "main.tex": {
+      "bytes": 40706,
+      "sha256": "4480821dda1ce7a90e596d03912e5d0b5d4fcf162549f4b56892076f497e6b14"
+    },
+    "references.bib": {
+      "bytes": 6457,
+      "sha256": "988fb33f4ded4faccfaaf6aac8578422baacb2228f21ce7a11bdad8793fecbca"
+    }
+  },
+  "graphics": [
+    "figures/factorial_position_curves.pdf"
+  ],
+  "mode": "scaffold",
+  "paper_dir": "/home/wushengzhou/workspace/github/long-context-position-bias-research/paper",
+  "pending": [
+    {
+      "code": "pending_content",
+      "file": "generated/results.tex",
+      "message": "Unresolved PENDING content"
+    },
+    {
+      "code": "pending_content",
+      "file": "main.tex",
+      "message": "Unresolved PENDING content"
+    },
+    {
+      "code": "missing_graphic",
+      "file": "main.tex",
+      "message": "Referenced graphic is missing: figures/factorial_position_curves.pdf"
+    },
+    {
+      "code": "author_metadata",
+      "file": "main.tex",
+      "message": "Author metadata has not been finalized"
+    }
+  ],
+  "schema_version": "arxiv-source-audit-v1",
+  "status": "passed"
+}

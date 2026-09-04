@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+data/*
+!data/.gitkeep
+results/*
+!results/.gitkeep
+
+checkpoints/
+wandb/
+outputs/
+artifacts/
+*.safetensors
+*.pt
+*.pth
+
+# Third-party benchmark source clones (fetched via scripts/fetch_nolima_sources.py etc.)
+third_party/NoLiMa/
+third_party/LongBench/
+third_party/google-research/

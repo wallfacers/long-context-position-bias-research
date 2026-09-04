@@ -1,0 +1,18 @@
+{
+  "chat_protocol": "merge-system-into-first-user-v1",
+  "chat_protocol_audit_sha256": "1552c46260ab621ec32bc4ef02eed15eab83181c7f7ea73f78fa8ba8343a3cab",
+  "config_signature": {
+    "hidden_size": 4096,
+    "max_position_embeddings": 32768,
+    "model_type": "mistral",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 32,
+    "num_key_value_heads": 8,
+    "vocab_size": 32768
+  },
+  "max_model_length": 32768,
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "tokenizer_fingerprint": "eed3c6c0d2d3ec75e44397ef98d5c3d7477c9dd0829aea27ad55d34edbf90961",
+  "training_max_length": 8320
+}

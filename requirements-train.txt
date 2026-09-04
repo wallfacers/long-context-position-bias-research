@@ -1,0 +1,11 @@
+# Install PyTorch from the CUDA index matching the AutoDL image first.
+# These versions are the tested 2026-08-25 training environment.
+accelerate==1.14.0
+bitsandbytes==0.50.1
+datasets==5.0.1
+huggingface-hub==1.23.0
+matplotlib==3.10.5
+peft==0.20.0
+requests==2.34.2
+transformers==5.15.1
+trl==1.10.0

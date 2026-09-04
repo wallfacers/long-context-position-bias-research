@@ -1,0 +1,11 @@
+# Keep evaluation in a separate environment from training: vLLM pins parts of
+# its own CUDA/Transformers stack.
+vllm==0.27.1
+
+# Official IFEval verifier dependencies. These versions are frozen so the
+# instruction-following regression can be reproduced independently of the
+# training environment.
+absl-py==2.3.1
+immutabledict==4.2.1
+langdetect==1.0.9
+nltk==3.9.1

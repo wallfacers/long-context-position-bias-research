@@ -1,0 +1,16 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_fingerprint": "d9f2b0711f94d20421630a5cd4fc82d8e0da643a895ce0c913545918de64041c",
+  "max_model_length": 32768,
+  "training_max_length": 8320,
+  "config_signature": {
+    "model_type": "qwen2",
+    "hidden_size": 3584,
+    "num_hidden_layers": 28,
+    "num_attention_heads": 28,
+    "num_key_value_heads": 4,
+    "vocab_size": 152064,
+    "max_position_embeddings": 32768
+  }
+}

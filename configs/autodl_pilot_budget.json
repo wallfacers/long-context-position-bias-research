@@ -1,0 +1,92 @@
+{
+  "name": "qwen25_7b_position_ablation_pilot",
+  "as_of": "2026-08-25",
+  "currency": "CNY",
+  "contingency_ratio": 0.15,
+  "round_up_to": 10,
+  "pricing": {
+    "rtx_4090_24gb": {
+      "hourly_rate": 1.88,
+      "source": "https://www.autodl.com/home"
+    },
+    "rtx_5090_32gb": {
+      "hourly_rate": 2.78,
+      "source": "https://www.autodl.com/home"
+    },
+    "a800_80gb": {
+      "hourly_rate": 4.98,
+      "source": "https://www.autodl.com/home"
+    },
+    "rtx_pro_6000_96gb": {
+      "hourly_rate": 5.98,
+      "source": "https://www.autodl.com/home"
+    },
+    "h800_80gb": {
+      "hourly_rate": 8.88,
+      "source": "https://www.autodl.com/home"
+    }
+  },
+  "one_time_costs": [
+    {
+      "name": "temporary_disk_and_transfer_reserve",
+      "amount": 10.0
+    }
+  ],
+  "workloads": [
+    {
+      "name": "preflight_and_100_step_canary",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 1,
+      "parallel_instances": 1,
+      "units_per_run": 100,
+      "seconds_per_unit": 25.0,
+      "fixed_hours_per_run": 0.25,
+      "notes": "Environment check plus the first 100 resumable training micro-steps."
+    },
+    {
+      "name": "first_variant_remaining_1900_steps",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 1,
+      "parallel_instances": 1,
+      "units_per_run": 1900,
+      "seconds_per_unit": 25.0,
+      "fixed_hours_per_run": 0.10,
+      "notes": "Resume the canary checkpoint; no repeated steps."
+    },
+    {
+      "name": "other_three_variants_2000_steps_each",
+      "calibration_group": "qlora_train",
+      "gpu": "rtx_5090_32gb",
+      "runs": 3,
+      "parallel_instances": 3,
+      "units_per_run": 2000,
+      "seconds_per_unit": 25.0,
+      "fixed_hours_per_run": 0.25,
+      "notes": "Three independent 8K QLoRA ablations; parallelism changes wall time, not cost."
+    },
+    {
+      "name": "evaluation_100_request_canary",
+      "calibration_group": "eval_request",
+      "gpu": "rtx_4090_24gb",
+      "runs": 1,
+      "parallel_instances": 1,
+      "units_per_run": 100,
+      "seconds_per_unit": 5.0,
+      "fixed_hours_per_run": 0.25,
+      "notes": "Measure real end-to-end seconds per request before the full evaluation."
+    },
+    {
+      "name": "evaluation_remaining_20900_requests",
+      "calibration_group": "eval_request",
+      "gpu": "rtx_4090_24gb",
+      "runs": 1,
+      "parallel_instances": 1,
+      "units_per_run": 20900,
+      "seconds_per_unit": 5.0,
+      "fixed_hours_per_run": 0.10,
+      "notes": "Resume after the canary: 5 checkpoints x 2 tasks x 3 fillers x 2 lengths x 7 positions x 50 groups."
+    }
+  ]
+}

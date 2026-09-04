@@ -1,0 +1,110 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{liu2024lost}
+\citation{modarressi2025nolima}
+\citation{an2024film,he2024never,yuan2026longcrafter}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{liu2024lost}
+\citation{hsieh2024ruler}
+\citation{bai2024longbench}
+\citation{modarressi2025nolima}
+\citation{veseli2025shift}
+\citation{zhang2026positional}
+\citation{hsieh2024found}
+\citation{lv2026lpes}
+\citation{he2024never}
+\citation{an2024film}
+\citation{yuan2026longcrafter}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Position-dependent context use.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Inference-time and positional-encoding interventions.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Training interventions.}{2}{section*.3}\protected@file@percent }
+\citation{wang2025pos2distill}
+\citation{li2026shuffle}
+\citation{mehta2026randomized}
+\citation{pei2026focusft}
+\citation{zhu2026exact}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Design}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Matched factorial treatments}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Data provenance and teacher independence}{4}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Models and training}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Realized-subset correction.}{4}{section*.4}\protected@file@percent }
+\citation{modarressi2025nolima}
+\citation{bai2024longbench}
+\citation{hendrycks2021mmlu}
+\citation{zhou2023ifeval}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Evaluation suites}{5}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Controlled matched suite.}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{NoLiMa semantic OOD.}{5}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Natural multi-document transfer.}{5}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mechanism and regression checks.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Metrics and statistics}{6}{subsection.3.5}\protected@file@percent }
+\newlabel{sec:metrics}{{3.5}{6}{Metrics and statistics}{subsection.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{6}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Near-ceiling aggregate accuracy hides position failures}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Primary strict block-complete factorial results. Treatment values are means across independently trained seeds, while Base is one fixed untrained model and is not duplicated as a training replicate. Qwen seeds are explicitly corrective and Mistral seeds prospective under this protocol. Uncertainty is defined in Section\nobreakspace  {}\ref  {sec:metrics}. All conditions receive the same evaluation request for answer, evidence identifiers, and exact quotes; thus a zero quote score is an observed failure rather than N/A.}}{7}{table.1}\protected@file@percent }
+\newlabel{tab:main}{{1}{7}{Primary strict block-complete factorial results. Treatment values are means across independently trained seeds, while Base is one fixed untrained model and is not duplicated as a training replicate. Qwen seeds are explicitly corrective and Mistral seeds prospective under this protocol. Uncertainty is defined in Section~\ref {sec:metrics}. All conditions receive the same evaluation request for answer, evidence identifiers, and exact quotes; thus a zero quote score is an observed failure rather than N/A}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Confirmatory NoLiMa-Hard results. The unit for treatment uncertainty is the independently trained seed; Base is fixed, and the repeated books, lengths, and placements do not turn 10 semantic cases into independent cases. Exact quotes are requested and scored for every condition; artificial evidence identifiers are not added.}}{7}{table.2}\protected@file@percent }
+\newlabel{tab:nolima}{{2}{7}{Confirmatory NoLiMa-Hard results. The unit for treatment uncertainty is the independently trained seed; Base is fixed, and the repeated books, lengths, and placements do not turn 10 semantic cases into independent cases. Exact quotes are requested and scored for every condition; artificial evidence identifiers are not added}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Semantic retrieval without lexical overlap}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Natural multi-document transfer}{7}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Mechanism and capability retention}{7}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Primary strict block-complete NoLiMa-Hard answer accuracy across seven evidence positions, case-weighted over the 2/6/2 underlying semantic cases in the three task strata. Rows denote model family and columns context length. Color denotes supervision and solid versus dashed lines denote paired versus independent construction. Bands are 95\% Student-$t$ intervals over independently trained seeds, clipped only for display; the fixed Base has no seed interval and exact values are provided in the companion CSV.}}{8}{figure.1}\protected@file@percent }
+\newlabel{fig:position}{{1}{8}{Primary strict block-complete NoLiMa-Hard answer accuracy across seven evidence positions, case-weighted over the 2/6/2 underlying semantic cases in the three task strata. Rows denote model family and columns context length. Color denotes supervision and solid versus dashed lines denote paired versus independent construction. Bands are 95\% Student-$t$ intervals over independently trained seeds, clipped only for display; the fixed Base has no seed interval and exact values are provided in the companion CSV}{figure.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Primary strict block-complete LongBench multi-document QA token-F1. Treatment values average independently trained seeds and Base is fixed. Scores use the maximum official English QA F1 over references; the three tasks contain 200 questions each.}}{8}{table.3}\protected@file@percent }
+\newlabel{tab:longbench}{{3}{8}{Primary strict block-complete LongBench multi-document QA token-F1. Treatment values average independently trained seeds and Base is fixed. Scores use the maximum official English QA F1 over references; the three tasks contain 200 questions each}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Descriptive failure taxonomy}{8}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{8}{section.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Key strict block-complete factorial contrasts in percentage points, shown as seed-level mean [95\% Student-$t$ interval]. Positive $\Delta $Worst is better, whereas positive $\Delta $Gap is worse; positive LongBench $\Delta $F1 is better. These contrasts predate the realized-subset correction; complete per-seed contrasts, within-seed paired bootstrap intervals, and Holm-adjusted tests are included in the released analysis files.}}{9}{table.4}\protected@file@percent }
+\newlabel{tab:factorial-contrasts}{{4}{9}{Key strict block-complete factorial contrasts in percentage points, shown as seed-level mean [95\% Student-$t$ interval]. Positive $\Delta $Worst is better, whereas positive $\Delta $Gap is worse; positive LongBench $\Delta $F1 is better. These contrasts predate the realized-subset correction; complete per-seed contrasts, within-seed paired bootstrap intervals, and Holm-adjusted tests are included in the released analysis files}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Representative-seed short-context regression checks. MMLU is full-test format-robust option accuracy and IFEval is official strict prompt accuracy. Noninferiority passes only when the paired 95\% interval for treatment minus Base lies entirely above the frozen $-2$ pp margin. JSON validity is audited separately and is not required for MMLU correctness.}}{9}{table.5}\protected@file@percent }
+\newlabel{tab:regression}{{5}{9}{Representative-seed short-context regression checks. MMLU is full-test format-robust option accuracy and IFEval is official strict prompt accuracy. Noninferiority passes only when the paired 95\% interval for treatment minus Base lies entirely above the frozen $-2$ pp margin. JSON validity is audited separately and is not required for MMLU correctness}{table.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations}{9}{section.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Representative-seed NoLiMa mechanism decomposition. Locate-only requests the quote; oracle-long moves gold evidence to a tagged block after the same long distractor context; oracle-short removes distractors. Values are clustered over the 10 semantic cases.}}{10}{table.6}\protected@file@percent }
+\newlabel{tab:mechanism}{{6}{10}{Representative-seed NoLiMa mechanism decomposition. Locate-only requests the quote; oracle-long moves gold evidence to a tagged block after the same long distractor context; oracle-short removes distractors. Values are clustered over the 10 semantic cases}{table.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Ethics, Licensing, and Reproducibility}{10}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{10}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Frozen training configuration}{10}{appendix.A}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{an2024film}{{1}{2024}{{An et~al.}}{{An, Ma, Lin, Zheng, and Lou}}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Frozen QLoRA configuration for every strict primary treatment.}}{11}{table.7}\protected@file@percent }
+\newlabel{tab:training-config}{{7}{11}{Frozen QLoRA configuration for every strict primary treatment}{table.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Evaluation and decoding inventory}{11}{appendix.B}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Evaluation inventory per model condition. Counts exclude bootstrap replicates.}}{11}{table.8}\protected@file@percent }
+\newlabel{tab:evaluation-config}{{8}{11}{Evaluation inventory per model condition. Counts exclude bootstrap replicates}{table.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Artifact and claim audit}{11}{appendix.C}\protected@file@percent }
+\bibcite{bai2024longbench}{{2}{2024}{{Bai et~al.}}{{Bai, Lv, Zhang, Lyu, Tang, Huang, Du, Liu, Zeng, Hou, Dong, Tang, and Li}}}
+\bibcite{he2024never}{{3}{2024}{{He et~al.}}{{He, Pan, Dong, Song, Liu, Sun, Liang, Wang, Zhang, and Zhang}}}
+\bibcite{hendrycks2021mmlu}{{4}{2021}{{Hendrycks et~al.}}{{Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt}}}
+\bibcite{hsieh2024ruler}{{5}{2024{}}{{Hsieh et~al.}}{{Hsieh, Sun, Kriman, Acharya, Rekesh, Jia, Zhang, and Ginsburg}}}
+\bibcite{hsieh2024found}{{6}{2024{}}{{Hsieh et~al.}}{{Hsieh, Chuang, Li, Wang, Le, Kumar, Glass, Ratner, Lee, Krishna, and Pfister}}}
+\bibcite{li2026shuffle}{{7}{2026}{{Li et~al.}}{{Li, Liang, Ren, Zhao, Shen, and Chen}}}
+\bibcite{liu2024lost}{{8}{2024}{{Liu et~al.}}{{Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and Liang}}}
+\bibcite{lv2026lpes}{{9}{2026}{{Lv et~al.}}{{Lv, Wang, Ding, Wu, Li, Xu, Wu, Shi, Li, Qian, Huang, and Zheng}}}
+\bibcite{mehta2026randomized}{{10}{2026}{{Mehta et~al.}}{{Mehta, Yin, and Durrett}}}
+\bibcite{modarressi2025nolima}{{11}{2025}{{Modarressi et~al.}}{{Modarressi, Deilamsalehy, Dernoncourt, Bui, Rossi, Yoon, and Schuetze}}}
+\bibcite{pei2026focusft}{{12}{2026}{{Pei et~al.}}{{Pei, Zhen, Yu, Pan, Yuan, and Yu}}}
+\bibcite{veseli2025shift}{{13}{2025}{{Veseli et~al.}}{{Veseli, Chibane, Toneva, and Koller}}}
+\bibcite{wang2025pos2distill}{{14}{2025}{{Wang et~al.}}{{Wang, Xiong, Wang, Li, Chu, and Zeng}}}
+\bibcite{yuan2026longcrafter}{{15}{2026}{{Yuan et~al.}}{{Yuan, Xu, Xu, Yang, Liu, Zhou, Huang, Ren, Cao, Zhao, and Liu}}}
+\bibcite{zhang2026positional}{{16}{2026}{{Zhang et~al.}}{{Zhang, Cui, Huang, and Sang}}}
+\bibcite{zhou2023ifeval}{{17}{2023}{{Zhou et~al.}}{{Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and Hou}}}
+\bibcite{zhu2026exact}{{18}{2026}{{Zhu et~al.}}{{Zhu, Li, Zou, Fu, Wang, He, and Yang}}}
+\gdef \@abspage@last{13}

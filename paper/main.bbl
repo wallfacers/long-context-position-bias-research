@@ -1,0 +1,149 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[An et~al.(2024)An, Ma, Lin, Zheng, and Lou]{an2024film}
+Shengnan An, Zexiong Ma, Zeqi Lin, Nanning Zheng, and Jian-Guang Lou.
+\newblock Make your llm fully utilize the context.
+\newblock \emph{arXiv preprint arXiv:2404.16811}, 2024.
+
+\bibitem[Bai et~al.(2024)Bai, Lv, Zhang, Lyu, Tang, Huang, Du, Liu, Zeng, Hou,
+  Dong, Tang, and Li]{bai2024longbench}
+Yushi Bai, Xin Lv, Jiajie Zhang, Hongchang Lyu, Jiankai Tang, Zhidian Huang,
+  Zhengxiao Du, Xiao Liu, Aohan Zeng, Lei Hou, Yuxiao Dong, Jie Tang, and
+  Juanzi Li.
+\newblock Longbench: A bilingual, multitask benchmark for long context
+  understanding.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics}, pages 3119--3137, 2024.
+\newblock \doi{10.18653/v1/2024.acl-long.172}.
+
+\bibitem[He et~al.(2024)He, Pan, Dong, Song, Liu, Sun, Liang, Wang, Zhang, and
+  Zhang]{he2024never}
+Junqing He, Kunhao Pan, Xiaoqun Dong, Zhuoyang Song, Yibo Liu, Qianguo Sun,
+  Yuxin Liang, Hao Wang, Enming Zhang, and Jiaxing Zhang.
+\newblock Never lost in the middle: Mastering long-context question answering
+  with position-agnostic decompositional training.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics}, pages 13628--13642, 2024.
+
+\bibitem[Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Zou, Mazeika, Song,
+  and Steinhardt]{hendrycks2021mmlu}
+Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn
+  Song, and Jacob Steinhardt.
+\newblock Measuring massive multitask language understanding.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Hsieh et~al.(2024{\natexlab{a}})Hsieh, Sun, Kriman, Acharya, Rekesh,
+  Jia, Zhang, and Ginsburg]{hsieh2024ruler}
+Cheng-Ping Hsieh, Simeng Sun, Samuel Kriman, Shantanu Acharya, Dima Rekesh, Fei
+  Jia, Yang Zhang, and Boris Ginsburg.
+\newblock Ruler: What's the real context size of your long-context language
+  models?
+\newblock \emph{arXiv preprint arXiv:2404.06654}, 2024{\natexlab{a}}.
+
+\bibitem[Hsieh et~al.(2024{\natexlab{b}})Hsieh, Chuang, Li, Wang, Le, Kumar,
+  Glass, Ratner, Lee, Krishna, and Pfister]{hsieh2024found}
+Cheng-Yu Hsieh, Yung-Sung Chuang, Chun-Liang Li, Zifeng Wang, Long~T. Le,
+  Abhishek Kumar, James Glass, Alexander Ratner, Chen-Yu Lee, Ranjay Krishna,
+  and Tomas Pfister.
+\newblock Found in the middle: Calibrating positional attention bias improves
+  long context utilization.
+\newblock \emph{arXiv preprint arXiv:2406.16008}, 2024{\natexlab{b}}.
+
+\bibitem[Li et~al.(2026)Li, Liang, Ren, Zhao, Shen, and Chen]{li2026shuffle}
+Zichong Li, Chen Liang, Liliang Ren, Tuo Zhao, Yelong Shen, and Weizhu Chen.
+\newblock Shuffle the context: {RoPE}-perturbed self-distillation for
+  long-context adaptation.
+\newblock \emph{arXiv preprint arXiv:2604.14339}, 2026.
+
+\bibitem[Liao and Liang(2026)]{liao2026shortcut}
+Yijun Liao and Fanwei Liang.
+\newblock Shortcut before circuit: Document statistics time in-context conflict
+  resolution.
+\newblock \emph{arXiv preprint arXiv:2608.24460}, 2026.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and
+  Liang]{liu2024lost}
+Nelson~F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua,
+  Fabio Petroni, and Percy Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  12:\penalty0 157--173, 2024.
+\newblock \doi{10.1162/tacl_a_00638}.
+
+\bibitem[Lv et~al.(2026)Lv, Wang, Ding, Wu, Li, Xu, Wu, Shi, Li, Qian, Huang,
+  and Zheng]{lv2026lpes}
+Changze Lv, Zhenghua Wang, Yiran Ding, Yixin Wu, Tianlong Li, Zhibo Xu, Muling
+  Wu, Tianyuan Shi, Shizheng Li, Qi~Qian, Xuanjing Huang, and Xiaoqing Zheng.
+\newblock Mitigating position bias in transformers via layer-specific
+  positional embedding scaling.
+\newblock \emph{arXiv preprint arXiv:2606.27705}, 2026.
+
+\bibitem[Mehta et~al.(2026)Mehta, Yin, and Durrett]{mehta2026randomized}
+Manas Mehta, Fangcong Yin, and Greg Durrett.
+\newblock Randomized {YaRN} improves length generalization for long-context
+  reasoning.
+\newblock \emph{arXiv preprint arXiv:2606.23687}, 2026.
+
+\bibitem[Modarressi et~al.(2025)Modarressi, Deilamsalehy, Dernoncourt, Bui,
+  Rossi, Yoon, and Schuetze]{modarressi2025nolima}
+Ali Modarressi, Hanieh Deilamsalehy, Franck Dernoncourt, Trung Bui, Ryan Rossi,
+  Seunghyun Yoon, and Hinrich Schuetze.
+\newblock Nolima: Long-context evaluation beyond literal matching.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning}, volume 267, 2025.
+
+\bibitem[Pei et~al.(2026)Pei, Zhen, Yu, Pan, Yuan, and Yu]{pei2026focusft}
+Zehua Pei, Hui-Ling Zhen, Xianzhi Yu, Sinno~Jialin Pan, Mingxuan Yuan, and Bei
+  Yu.
+\newblock {FOCUSFT}: Bilevel optimization for dilution-aware long-context
+  fine-tuning.
+\newblock \emph{arXiv preprint arXiv:2605.09932}, 2026.
+
+\bibitem[Veseli et~al.(2025)Veseli, Chibane, Toneva, and
+  Koller]{veseli2025shift}
+Blerta Veseli, Julian Chibane, Mariya Toneva, and Alexander Koller.
+\newblock Positional biases shift as inputs approach context window limits.
+\newblock In \emph{Proceedings of the Conference on Language Modeling}, 2025.
+
+\bibitem[Wang et~al.(2025)Wang, Xiong, Wang, Li, Chu, and
+  Zeng]{wang2025pos2distill}
+Yifei Wang, Feng Xiong, Yong Wang, Linjing Li, Xiangxiang Chu, and Daniel~Dajun
+  Zeng.
+\newblock Position bias mitigates position bias: Mitigate position bias through
+  inter-position knowledge distillation.
+\newblock \emph{arXiv preprint arXiv:2508.15709}, 2025.
+
+\bibitem[Yuan et~al.(2026)Yuan, Xu, Xu, Yang, Liu, Zhou, Huang, Ren, Cao, Zhao,
+  and Liu]{yuan2026longcrafter}
+Chenhao Yuan, Yinhao Xu, Shuwen Xu, Xizhi Yang, Jiaxiang Liu, Chenxi Zhou,
+  Shaoping Huang, Haolin Ren, Pengfei Cao, Jun Zhao, and Kang Liu.
+\newblock Longcrafter: Towards diverse long-context understanding via
+  evidence-graph-guided instruction synthesis.
+\newblock \emph{arXiv preprint arXiv:2607.06160}, 2026.
+
+\bibitem[Zhang et~al.(2026)Zhang, Cui, Huang, and Sang]{zhang2026positional}
+Chuyifei Zhang, Hongyu Cui, Xiaowen Huang, and Jitao Sang.
+\newblock Positional failures in long-context llms: A blind spot in reasoning
+  benchmarks.
+\newblock \emph{arXiv preprint arXiv:2605.23170}, 2026.
+
+\bibitem[Zhou et~al.(2023)Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and
+  Hou]{zhou2023ifeval}
+Jeffrey Zhou, Tianjian Lu, Swaroop Mishra, Siddhartha Brahma, Sujoy Basu,
+  Yi~Luan, Denny Zhou, and Le~Hou.
+\newblock Instruction-following evaluation for large language models.
+\newblock \emph{arXiv preprint arXiv:2311.07911}, 2023.
+
+\bibitem[Zhu et~al.(2026)Zhu, Li, Zou, Fu, Wang, He, and Yang]{zhu2026exact}
+Jinchang Zhu, Jindong Li, Chengyu Zou, Rong Fu, Chao Wang, Haowei He, and
+  Menglin Yang.
+\newblock Where does long-context supervision actually go? effective-context
+  exposure balancing.
+\newblock \emph{arXiv preprint arXiv:2605.10544}, 2026.
+
+\end{thebibliography}
