@@ -8,7 +8,6 @@
       "hsieh2024found",
       "hsieh2024ruler",
       "li2026shuffle",
-      "liao2026shortcut",
       "liu2024lost",
       "lv2026lpes",
       "mehta2026randomized",
@@ -29,7 +28,6 @@
       "hsieh2024found",
       "hsieh2024ruler",
       "li2026shuffle",
-      "liao2026shortcut",
       "liu2024lost",
       "lv2026lpes",
       "mehta2026randomized",
@@ -67,24 +65,24 @@
   "errors": [],
   "files": {
     "README.md": {
-      "bytes": 3610,
-      "sha256": "67c8258eaf100c66355e7f1976067080283b8633e6bafe7bbd0c868c19104528"
+      "bytes": 3388,
+      "sha256": "23b626f7f3e61741839ef6d27aa664c177ec55986d6fc9e716af294fd6bf5792"
     },
     "generated/results.tex": {
       "bytes": 1365,
       "sha256": "0f5031d4319439d0ed4f87374bef56bd939a308dcfe69ff679902aac51d12b45"
     },
     "main.bbl": {
-      "bytes": 7233,
-      "sha256": "798990f977acad6092b21f02875b0e2c4953463165545266cc5dfe610cdadb8f"
+      "bytes": 7004,
+      "sha256": "2fabea38587f4988b105989a4582fce5e6794ee668e1f0be22a10005f673f6e2"
     },
     "main.tex": {
-      "bytes": 40706,
-      "sha256": "4480821dda1ce7a90e596d03912e5d0b5d4fcf162549f4b56892076f497e6b14"
+      "bytes": 38671,
+      "sha256": "0646440b329d876074425fa5878daeeadcbfbfa0d5aeaf2f4fd7d4be76aa3aa4"
     },
     "references.bib": {
-      "bytes": 6457,
-      "sha256": "988fb33f4ded4faccfaaf6aac8578422baacb2228f21ce7a11bdad8793fecbca"
+      "bytes": 6234,
+      "sha256": "b8c0e1b0b0fa8e456c44ff38c6ac4defcf18f041f215b23d30d182d839d7db6f"
     }
   },
   "graphics": [

@@ -1,0 +1,73 @@
+{
+  "aggregation": "case-weighted across NoLiMa-Hard task strata before seed-level Student-t intervals",
+  "analysis_path": "/root/autodl-tmp/position-bias-pilot/results/cross_family_block96/nolima/seed_level_analysis.json",
+  "analysis_sha256": "2669ffce5b129306db51effb22a3ca870d573f4ff0116d417b36b7918d62a988",
+  "confirmatory_only": false,
+  "corrective_plus_confirmatory_primary": true,
+  "families": [
+    "Mistral-7B-v0.3",
+    "Qwen2.5-7B"
+  ],
+  "files": {
+    "alt_text": {
+      "bytes": 831,
+      "path": "/root/autodl-tmp/position-bias-pilot/paper/figures/factorial_position_curves.alt.txt",
+      "sha256": "77824df0db823aba90a63f2c391289395978a1728b2aea5a8a05353b9681dac8"
+    },
+    "pdf": {
+      "bytes": 43387,
+      "path": "/root/autodl-tmp/position-bias-pilot/paper/figures/factorial_position_curves.pdf",
+      "sha256": "c7024d57007436882d9d729ac9f99598142298ddd259301f6dbf3fa5e7c98b17"
+    },
+    "png": {
+      "bytes": 653378,
+      "path": "/root/autodl-tmp/position-bias-pilot/paper/figures/factorial_position_curves.png",
+      "sha256": "22838a0d37ef35cb2f6a6e1e282583ce9c1d97429532e363d25e5c326257bca7"
+    },
+    "svg": {
+      "bytes": 190506,
+      "path": "/root/autodl-tmp/position-bias-pilot/paper/figures/factorial_position_curves.svg",
+      "sha256": "83741d978aa129884270a80ed4520c05685891ccb8aa63c9a8444c7a7a136065"
+    },
+    "table": {
+      "bytes": 38631,
+      "path": "/root/autodl-tmp/position-bias-pilot/paper/figures/factorial_position_curves.csv",
+      "sha256": "93105d00722ed756bf6e07d736fb72adbbc67b6a2b11e78cef1733b41a1159ec"
+    }
+  },
+  "interval_note": "Student-t seed intervals are clipped only in the plot; CSV is exact.",
+  "lengths": [
+    1024,
+    8192,
+    32000
+  ],
+  "positions": [
+    "p000",
+    "p010",
+    "p025",
+    "p050",
+    "p075",
+    "p090",
+    "p100"
+  ],
+  "primary_statuses_by_family": {
+    "Mistral-7B-v0.3": [
+      "confirmatory"
+    ],
+    "Qwen2.5-7B": [
+      "corrective"
+    ]
+  },
+  "schema_version": "seed-level-factorial-figure-v2",
+  "source_tasks": [
+    "nolima_onehop",
+    "nolima_twohop",
+    "nolima_twohop2"
+  ],
+  "status": "validated",
+  "task_case_weights": {
+    "nolima_onehop": 2,
+    "nolima_twohop": 6,
+    "nolima_twohop2": 2
+  }
+}

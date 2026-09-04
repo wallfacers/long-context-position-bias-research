@@ -1,0 +1,73 @@
+{
+  "confirmatory_only": false,
+  "corrective_plus_confirmatory_primary": true,
+  "families": [
+    "Mistral-7B-v0.3",
+    "Qwen2.5-7B"
+  ],
+  "labeled_exploratory_sources": [
+    "qwen_exploratory_rule"
+  ],
+  "metrics": {
+    "ExploratoryIndependentEvidenceGap": 0.003333333333333336,
+    "ExploratoryIndependentEvidenceWorst": 0.9966666666666667,
+    "ExploratoryPairedAnswerGap": 0.12666666666666668,
+    "ExploratoryPairedAnswerWorst": 0.8733333333333334,
+    "ExploratoryRuleAnswerMax": 0.9995238095238095,
+    "ExploratoryRuleAnswerMin": 0.9733333333333334
+  },
+  "output_tex_sha256": "e2e6d97167c947f0fb0d20eb94f6cf6bc4995731aa365f85a758fa318cb7bba7",
+  "primary_statuses_by_family": {
+    "Mistral-7B-v0.3": [
+      "confirmatory"
+    ],
+    "Qwen2.5-7B": [
+      "corrective"
+    ]
+  },
+  "primary_summaries_confirmatory_only": false,
+  "schema_version": "paper-results-generation-v1",
+  "sources": {
+    "longbench": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/cross_family_block96/longbench/seed_level_analysis.json",
+      "sha256": "4f0d8a936b844371d3a0a0cee5544732eefeac4a96103441fd72d674a7399c87"
+    },
+    "mistral_ifeval": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/mistral_block96_ifeval/official_analysis/ifeval_analysis.json",
+      "sha256": "4bb0eb95f6e44c922f475de3b371852d5c449bbe54cd51633f346649e8f58375"
+    },
+    "mistral_mechanisms": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/mistral_block96_nolima_mechanisms/mechanism_analysis/nolima_mechanism_analysis.json",
+      "sha256": "63cc58a6ca2cc88335017499bc4ed79b4256c56d4c490e614916f1160fdabf30"
+    },
+    "mistral_mmlu": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/mistral_block96_mmlu/general_regression_analysis/general_regression_analysis.json",
+      "sha256": "46459a92eb58b1c98806b1646ac95df7eca3f2201d0df53d162cfd7880056523"
+    },
+    "nolima": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/cross_family_block96/nolima/seed_level_analysis.json",
+      "sha256": "2669ffce5b129306db51effb22a3ca870d573f4ff0116d417b36b7918d62a988"
+    },
+    "qwen_exploratory_rule": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/formal_s100_seed1_frozen/analysis/factorial_analysis.json",
+      "sha256": "c024ed1fafd57c5e0b3b32b22c12c00d8e31445d66eef9766b8fd20ccd30611a"
+    },
+    "qwen_ifeval": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/qwen_block96_ifeval/official_analysis/ifeval_analysis.json",
+      "sha256": "33a5703290e06e451be727b1ce0459821ca1a2cfb9f797554de9b1cd68c5f791"
+    },
+    "qwen_mechanisms": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/qwen_block96_nolima_mechanisms/mechanism_analysis/nolima_mechanism_analysis.json",
+      "sha256": "b48b5842fc6492594c71dd3f369737943fa2022b265bb4a778baa0cc3eb1739b"
+    },
+    "qwen_mmlu": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/qwen_block96_mmlu/general_regression_analysis/general_regression_analysis.json",
+      "sha256": "1e7322916de29e349d268d22ab50812981eee53534c440baaa45370536b06c64"
+    },
+    "rule": {
+      "path": "/root/autodl-tmp/position-bias-pilot/results/cross_family_block96/rule/seed_level_analysis.json",
+      "sha256": "fd07cd02086396f254bcc649eb21948379ba950a0259d33ee5fb82b206800c8c"
+    }
+  },
+  "status": "validated"
+}
