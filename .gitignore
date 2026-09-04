@@ -22,3 +22,17 @@ artifacts/
 third_party/NoLiMa/
 third_party/LongBench/
 third_party/google-research/
+
+# LaTeX build intermediates (PDFs are rebuilt via scripts/build_paper_pdf.sh)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.pdf
+
+# Local audit workspace
+review_results/
+
+# Packaging metadata
+src/*.egg-info/
